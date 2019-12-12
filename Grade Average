@@ -23,7 +23,6 @@ int main()
         {
                 sum=sum+grade[i];
         }
-        cout<<"------------------------------------";
         cout<<"\n Total Average of Student = "<<sum;
         avg=sum/6;
         cout<<"\n Average = "<<avg;
@@ -37,7 +36,7 @@ int main()
         {
                 cout<<"B";
         }
-        else if(avg<80)
+        else if(avg<80 && avg>=70)
         {
                 cout<<"C";
         }
