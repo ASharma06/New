@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+        int grade[6], i;
+        float sum=0,avg;
+
+        cout<<"\n Enter Grade of Student \n";
+        cout<<"\n Spanish : ";
+        cin>>grade[0];
+        cout<<"\n English : ";
+        cin>>grade[1];
+        cout<<"\n Math : ";
+        cin>>grade[2];
+        cout<<"\n History : ";
+        cin>>grade[3];
+        cout<<"\n Science : ";
+        cin>>grade[4];
+        cout<<"\n BIM/Band/Orchestra (If in multiple add up total) : ";
+        cin>>grade[5];
+
+        for(i=0;i<6;i++)
+        {
+                sum=sum+grade[i];
+        }
+        cout<<"------------------------------------";
+        cout<<"\n Total Average of Student = "<<sum;
+        avg=sum/6;
+        cout<<"\n Average = "<<avg;
+        cout<<"\n Grade   = ";
+
+        if(avg>90)
+        {
+                cout<<"A";
+        }
+        else if(avg<90 && avg>=80)
+        {
+                cout<<"B";
+        }
+        else if(avg<80)
+        {
+                cout<<"C";
+        }
+        else
+        {
+                cout<<"F";
+        }
+        return 0;
+}
